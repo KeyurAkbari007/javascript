@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greatest Common Division</title>
+</head>
+<body>
+	<script type="text/javascript">
+		gcd=0
+		a=0
+		n1 = parseInt(prompt("Enter n1 : "))
+		n2 = parseInt(prompt("Enter n2 : "))
+		if(n1>n2){
+			a=n1/2
+		}
+		else{
+			a=n2/2
+		}
+		for(i=1; i<=a; i++){
+			if(n1%i==0 && n2%i==0){
+				gcd=i
+			}
+		}
+		document.write("Greatest Common Division = "+gcd)
+
+	</script>
+</body>
+</html>
