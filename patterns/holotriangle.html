@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	for (b=1;b<=5;b++)
+	{
+		for(z=1;z<=5-b;z++)
+		{
+			document.write("&nbsp");
+		}
+		for(c=1;c<=b;c++)
+		{
+			if (b==1||b==5||c==1||c==b) {
+			document.write("*");
+			}
+			else
+			{
+				document.write("#");
+
+			}
+		}
+		document.write("<br/>");
+	}
+	
+</script>
+</body>
+</html>
