@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+
+		let str = prompt("Enter a string");
+		let start = str.indexOf('a');
+		let end = str.lastIndexOf('a');
+		document.write("indexOf a from Start " + start + " <br/>");
+		document.write("indexOf a from end " +end + "<br/> ");
+		let str2 = str.substring(start+1,end);
+		document.write(str2);
+	</script>
+
+</body>
+</html>
