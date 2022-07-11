@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Username and Password</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Username</td></br>
+			<td>:</td></br>
+			<td><input type="text" id="user"></td>
+		</tr>
+		<tr>
+			<td>Password</td></br>
+			<td>:</td></br>
+			<td><input type="Password" id="pass"></td>
+			<td><input type="button" value="Show" id="show" onclick="showHide()"></td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center">
+				<input type="button" value="Submit" id="submit" onclick="submit()">
+			</td>
+			
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function showHide(){
+			var p=document.getElementById("pass");
+			var c=document.getElementById("show");
+			if(p.type=="password"){
+				p.type="text";
+				c.value="Hide";
+			}
+			else{
+				p.type="Password";
+				c.value="Show";
+			}
+		}
+		function submit(){
+			var username=document.getElementById("user").value;
+			var password=document.getElementById("pass").value;
+			if(username=="keyur"){
+				if(password=="ak"){
+					document.write("Valid User");
+				}
+				else{
+					document.write("Invalid Password");
+				}
+			}
+			else{
+				document.write("Invalid Username");
+			}
+		}
+	</script>
+</body>
+</html>
