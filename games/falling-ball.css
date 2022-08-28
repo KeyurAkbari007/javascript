@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#game {
+  /* display:flex; */
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  overflow: hidden;
+  background-image: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
+  /* z-index: 4; */
+}
+body {
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.forStart {
+  display: none;
+}
+#forStart {
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 15vh;
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+  opacity: 0.5;
+  margin: auto;
+  margin-top: 40vh;
+
+  font-size: 30px;
+
+  background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+
+  display: flex;
+  word-spacing: 5;
+  letter-spacing: 3px;
+  justify-content: center;
+  align-items: center
+  
+}
+ .score_display {
+  display: none;
+ }  
+.score_display2 {
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 15vh;
+  background-color: blue;
+  opacity: 0.7;
+  margin: auto;
+  margin-top: 40vh;
+  font-size: 15px;
+  color: yellow;
+  display: flex;
+  word-spacing: 5;
+  letter-spacing: 5px;
+  justify-content: center;
+}
+
+#character,
+.character {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  top: 400px;
+  left: 190px;
+  z-index: 1000000;
+}
+.block {
+  width: 400px;
+  height: 20px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+}
+.hole {
+  width: 40px;
+  height: 20px;
+  background-image: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
+
+  /* opacity: 10%; */
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+}
+.btn {
+  width: 100%;
+  height: 20vh;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#divbtn {
+  width: 20%;
+  height: 10vh;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+  font-size: 30px;
+  font-family: Impact, fantasy;
+  letter-spacing: 7px;
+
+}
+.hide {
+  display: none;
+}
+#div_score_display{
+  position:absolute;
+
+  width: 20%;
+  height: 10vh;
+  font-size: 40px;
+  font-family: Impact, fantasy;
+  color: white;
+  letter-spacing: 10px;
+  margin-left: 130px;
+  margin-top: 200px;
+
+}
